@@ -1,0 +1,840 @@
+/* html {
+    font-size: 18px;
+} */
+
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: local('Samsung Sharp Sans Medium'), local('SamsungSharpSans-Medium'),
+        url('../fonts/SamsungSharpSans-Medium.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: local('Samsung Sharp Sans'), local('SamsungSharpSans'),
+        url('../fonts/SamsungSharpSans.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans';
+    src: local('Samsung Sharp Sans Bold'), local('SamsungSharpSans-Bold'),
+        url('../fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+        url('../fonts/SamsungSharpSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Black Italic'), local('Aeonik-BlackItalic'),
+        url('../fonts/Aeonik-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Aeonik-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Bold'), local('Aeonik-Bold'),
+        url('../fonts/Aeonik-Bold.woff2') format('woff2'),
+        url('../fonts/Aeonik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Bold Italic'), local('Aeonik-BoldItalic'),
+        url('../fonts/Aeonik-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Aeonik-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Light'), local('Aeonik-Light'),
+        url('../fonts/Aeonik-Light.woff2') format('woff2'),
+        url('../fonts/Aeonik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Medium'), local('Aeonik-Medium'),
+        url('../fonts/Aeonik-Medium.woff2') format('woff2'),
+        url('../fonts/Aeonik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Light Italic'), local('Aeonik-LightItalic'),
+        url('../fonts/Aeonik-LightItalic.woff2') format('woff2'),
+        url('../fonts/Aeonik-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Regular'), local('Aeonik-Regular'),
+        url('../fonts/Aeonik-Regular.woff2') format('woff2'),
+        url('../fonts/Aeonik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Medium Italic'), local('Aeonik-MediumItalic'),
+        url('../fonts/Aeonik-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Aeonik-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Thin'), local('Aeonik-Thin'),
+        url('../fonts/Aeonik-Thin.woff2') format('woff2'),
+        url('../fonts/Aeonik-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Regular Italic'), local('Aeonik-RegularItalic'),
+        url('../fonts/Aeonik-RegularItalic.woff2') format('woff2'),
+        url('../fonts/Aeonik-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: local('Aeonik Thin Italic'), local('Aeonik-ThinItalic'),
+        url('../fonts/Aeonik-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Aeonik-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Samsung Sharp Sans';
+}
+
+p {
+    color: #796666;;
+    font-size: 13.14px;
+}
+
+.title-white {
+    color: #fff!important;
+}
+
+a {
+    text-decoration: none;
+    /* font-size: 13.28px; */
+    font-weight: 500;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* .active {
+    background: #438dcc !important;
+} */
+
+*{
+    box-sizing:border-box;
+
+}
+
+.title {
+    font-size: 2.2rem;
+    color: #1f2e50;
+}
+
+.title-2-black {
+    color: #2e2e2e;
+    font-size: 14.78px;
+    font-weight: 600;
+}
+
+.section {
+    padding: 70px 0 80px 0;
+
+}
+
+.faint-background {
+    background: #f4f7fa;
+}
+
+span.healthbag {
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+.inner-division-margin {
+    max-width: 56.2em;
+    margin: 0 auto;
+}
+
+.svg-icon-glossary {
+    /* height: 4.5em; */
+    width: 1.5em;
+    /* margin-left: 1em; */
+    /* margin-top: 1em; */
+}
+
+.glossary-icon {
+    width: 1.5em;
+    padding-right: 8px;
+}
+
+.navbar-lists a::after {
+    content: '';
+    position: absolute;
+    z-index: 9;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #848fa2;
+    transition: .5s ease;
+    width: 0;
+
+}
+
+/* Section-1 */
+.section-1 {
+
+    background: #ecf2f6;
+
+}
+/*End of  Section-1 */
+
+/*Start of navbar css */
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* .navbar h2 {
+    text-transform: uppercase;
+
+} */
+
+nav.navbar {
+    height: 6em;
+}
+
+.navbar-element.site-title h2 {
+    color: #1f2e50;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-lists a:hover::after {
+    /* transform: scaleX(1);
+    transform-origin: left;
+    /* transition: 1s ease; */
+    /* display: block;
+    opacity: 1; */
+    width: 50%;
+}
+
+.navbar-lists {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40em;
+}
+
+.navbar-lists li {
+    /* display: flex; */
+    flex-direction: row;
+    position: relative;
+}
+
+.navbar-lists a {
+    text-decoration: none;
+    color: #2d2121;
+    font-weight: 500;
+}
+
+/* End of navbar css */
+
+/* first section css */
+
+.first-section {
+    display: flex;
+    margin-top: 3em;
+    padding-bottom: 5em;
+}
+
+.first-section h4 {
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 500;
+}
+
+.first-section h1 {
+    font-size: 60px;
+    width: 80%;
+    color: #212121;
+    margin: 16px 0;
+}
+
+.first-section h5 {
+    width: 80%;
+    color: #212121;
+    margin-bottom: 26px;
+}
+
+.first-section p {
+    font-size: .83rem;
+    font-weight: 600;
+    width: 80%;
+    color: #212127;
+}
+
+.first-section h4 {
+    width: 80%;
+    font-size: 17px;
+    color: #2b3a5a;
+}
+
+.first-section button {
+    padding: .7em 2em;
+    background-color: #438dcc;
+    color: white;
+    font-size: 1.02rem;
+    border-radius: 8px;
+    border: 1px solid #438dcc;
+    margin-top: 10px;
+}
+
+/* End of first section css */
+
+/* Start of second section [Explore by Category]*/
+.section-2 {
+    background: #f4f7fa;
+    /* padding: 5em 0; */
+
+}
+
+.category-items ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.title.explore-cat {
+    margin-bottom: 50px;
+}
+
+.cat-description p {
+    font-size: 11px;
+    padding-bottom: 16px;
+}
+
+.title span {
+    float: right;
+}
+
+.category-items li {
+    border: 1px solid #fff;
+    width: 18%;
+    border-radius: 1em;
+    background: #fff;
+    transition: all .5s ease-in-out;
+}
+
+/* .category-items li:active {
+    background: #438dcc;
+} */
+
+.category-items a {
+    text-decoration: none;
+    color: #212127;
+}
+
+.category-items a img {
+    height: 3em;
+    width: 3em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.cat-description {
+    margin-left: 1em;
+}
+
+.category-items a h4 {
+    width: 75%;
+}
+
+
+/* End of second section [Explore by Category]*/
+
+/* Start of section-3 [vocational and training information]  */
+
+.section-3 {
+    background-image: linear-gradient(to right, #4896ce, #5ec7d5);
+}
+
+.section-elements {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 50%;
+}
+
+.section-elements h6 {
+    font-size: 14.78px;
+    font-weight: 500;
+}
+
+.transparent_btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: .7em 2em;
+    border-radius: 8px;
+    margin-right: .3em;
+    /* margin-top: 2em; */
+    /* line-height: 100%; */
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color ease 400ms;
+}
+
+.button-elements {
+    margin-top: 40px;
+}
+
+.transparent_btn:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+    transition: .5s ease;
+}
+
+/* End of section-3 [vocational and training information]  */
+
+
+/* Start of section-4 [our services] */
+.section.section-4.faint-background .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-items.common-white-flex-design li:hover h5,
+.category-items li:hover h3,
+.category-items li:hover p
+ {
+    color: white;
+    /* transition: all 3s ease-in; */
+}
+
+.service-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 0;
+}
+
+.common-white-flex-design a:hover {
+    background: #438dcc;
+    color: white;
+}
+
+.service-description h5 {
+    padding-left: 13.14px;
+    color: #796666;
+}
+
+/* .section.section-4 {
+    background: #ecf2f6;
+} */
+
+.service-items a
+/* , */
+/* .articles-news-list */
+ {
+    border: 1px solid #fff;
+    background: white;
+    height: 10em;
+}
+
+.svg-icon-glossary-2 {
+    height: 1.5em;
+    width: 3em;
+    /* margin-left: 1em; */
+    /* margin-top: 1em; */
+}
+
+.common-white-flex-design a
+{
+    display: block;
+    text-decoration: none;
+    color: #666;
+    padding-left: .5em;
+    border-radius: .5em;
+    /* background: #fff; */
+    height: 8.6em;
+    transition: all .5s ease-in-out;
+}
+
+img+img {
+    float: right;
+    margin-right: 1em;
+}
+
+/* End of section-4 [our services] */
+
+
+/* Start of section-5 [our events] */
+.section-5.section-3 {
+    padding: 5em 0;
+}
+
+.headline {
+    color: #212121;
+    font-size: 14.78px;
+}
+
+.our-event {
+    display: flex;
+    align-items: baseline;
+    color: white;
+}
+
+.wrapper {
+    background: #f4f7fa;
+    border-radius: 1.5em;
+    padding-bottom: 1em;
+}
+
+/* .medic-item a {
+    text-decoration: none;
+} */
+
+.learn-more {
+    vertical-align: bottom;
+    color: #253455;
+    font-weight: bold;
+    font-size: 13.14px;
+}
+
+img.learn-more {
+    margin-left: .7em;
+}
+
+.our-events {
+    display: flex;
+    align-items: baseline;
+    /* height: 10em; */
+    color: #fff;
+    padding: 50px 0 50px 0;
+}
+
+ /* .7
+ {
+    width: 95%;
+    padding: 0 1em;
+    color: red;
+ }*/
+
+.navbar img.png {
+    border-radius: 1.5em 1.5em 0 0;
+    width: 100%;
+}
+
+.our-events h3 {
+    margin-left: 10%;
+}
+
+.addition-section.section-5 {
+    /* margin: -5.39em 0 5em; */
+    background: linear-gradient(to right, #4896ce, #5ec7d5);
+}
+
+.navbar li {
+    margin: 0 .8em;
+    border-radius: 1.5em;
+    /* border: 1px solid white; */
+}
+
+.medic-item {
+    /* border: 1px solid white; */
+    /* background: #f4f7fa; */
+}
+
+.image-1 img {
+    height: auto;
+    width: 11.8rem;
+}
+
+.service-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .service-items ul > li {
+    padding: 0 15px;
+    flex: 0 0 25%;
+    max-width: 25%;
+    list-style: none;
+    padding: .8em;
+  }
+
+/* End of section-5 [our events] */
+
+/* section-5.5 */
+.section-505 {
+    background: white;
+    height: 218px;
+    margin-top: -184px;
+}
+
+
+/* End of section-5.5 */
+.enjoy-life {
+    margin-bottom: -6.3em;
+}
+
+.enjoy-life h1 {
+    text-align: center;
+    font-size: 70.48px;
+    color: #ecf2f6;
+}
+/* Start of section-5.6 */
+
+
+
+/* Start of section-5.6 */
+
+/* Start of section-2nd-last [glossary section] */
+.section-2nd-last {
+    background: #1f2e50;
+    color: #cbc8c6;
+}
+
+.slider {
+    float: right;
+    margin-top: 5em;
+    width: 2.5em;
+}
+
+.svg-icon-2 {
+    height: 1em;
+    width: 1.5em;
+    margin-left: 1em;
+}
+
+.glossary-lists {
+    display: flex;
+    align-content: space-between;
+    align-items: baseline;
+}
+
+.category-items li:hover {
+    background: #438dcc;
+}
+
+.glossary-lists div {
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column; 
+    flex: 1 1 0;
+}
+
+.glossary-lists p {
+    font-size: .9rem;
+    margin: .5em 0;
+}
+
+/* 
+h6 {
+    line-height: .3rem;
+} */
+
+.glossary-lists p {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.glossary-lists > div:first-child {
+    flex-grow: 1.2;
+}
+
+.articles-news-list.common-white-flex-design {
+    font-size: .9rem;
+    padding: 0 .8em;
+    border-radius: 1em;
+    flex-basis: 32.3%;
+}
+
+.articles-news-list.common-white-flex-design h3 {
+    font-weight: 500;
+    padding-left: 18px;
+    width: 95%;
+}
+
+
+.location p {
+    position: absolute;
+    display: inline-block;
+    padding-left: 2px;
+    color: #cbc8c6;
+    left: 24px;
+    top: -8px;
+}
+
+.svg-icon-2 {
+    height: 1em;
+    width: 1.5em;
+    float: right;
+/* margin-left: 1em; */
+/* margin-top: 1em; */
+}
+
+.glossary-lists > div:nth-child(2) {
+    flex-grow: .7;
+}
+
+.articles-news-list.common-white-flex-design p {
+    margin: 0 auto;
+    max-width: 88%;
+}
+
+/* End of section-2nd-last [glossary section] */
+
+
+/* Start of section-6 [follow the latest articles and news] */
+
+/* .articles-news-lists {
+    display: flex;
+    /* align-content: space-between; 
+    justify-content: space-between; 
+}*/
+
+.articles-news-list {
+    width: 30%;
+    align-content: space-between;
+    background: white;
+    border-radius: 1.5em;
+}
+
+.articles-news-list div img.png{
+    width: 100%;
+}
+
+.glossary-lists h5 {
+    margin: .7em 0;
+    position: relative;
+}
+
+.date {
+    color: #2d2e50;
+}
+
+.section-6 h1 {
+    padding: .9em 0 1.3em 0;
+    font-size: 29.56px;
+}
+
+.medic-devices {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* End of section-6 [follow the latest articles and news] */
+
+
+
+/* Start of section-last [footer section] */
+
+.section-2nd-last.section-last .container {
+    border-top: 1px solid #cbc8c6;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1em 0; */
+}
+
+.footer-items a {
+    color: #cbc8c6;
+}
+
+.footer-items > .social-shares {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 10em;
+}
+
+.footer-items .navbar a:first-child h5 {
+    border-left: none;
+}
+
+.footer-items a h5 {
+    border-left: 2px solid white;
+    padding: 0 1em;
+}
+
+/* End of section-last [footer section] */
+
+
+
+.svg-icons {
+    height: 1em;
+width: 1.5em;
+margin-left: 1em;
+margin-top: 1em;
+}
